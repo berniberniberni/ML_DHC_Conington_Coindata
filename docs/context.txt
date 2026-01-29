@@ -1,0 +1,86 @@
+Conington coin data – key fields and terminology
+
+SITECODE
+- Unique code for the excavation area within the A14 project (for example A14-32 or A14-33).
+- Targeted excavation area (TEA) the coin comes from.
+
+CONTEXT
+- Number of the archaeological context (layer, pit fill, feature) where the coin was found.
+- Used to link coins to stratigraphy and settlement phases.
+
+PERIOD
+- Broad period of the context in the excavation database (for example 99 may mean “unphased” or “all periods” in this register).
+- This is dating based on stratigraphy/feature, not on the coin itself.
+
+MATERIAL
+- Metal of the object, such as COPPER ALLOY, SILVER, or LEAD.
+- Important for distinguishing coins from tokens and for later conservation/interpretation.
+
+COIN_TYPE
+- General object class as identified by the specialist, such as COIN, COPY (imitation), or JETTON (token-like piece).
+- Helps separate ‘proper’ coins from copies and jettons.
+
+COIN_REGIME
+- High-level historical regime/period of the coin based on numismatic identification.
+- Codes used here:
+  - IA = Iron Age
+  - R  = Roman
+  - AS = Anglo-Saxon
+  - E  = Medieval
+  - N  = Post-medieval
+- This is coin-based dating, independent of the context’s stratigraphic period.
+
+RULER
+- Short code for the authority who issued the coin (emperor or monarch), for example:
+  - CONSTANTIUS II, VALENTINIAN I (Roman emperors)
+  - JAM1 (James I)
+- Narrowly constrains the date range of the coin.
+
+COIN_EDATE / COIN_LDATE
+- ‘Early date’ and ‘late date’ for the coin in calendar years.
+- Together they give the interpreted date range during which the coin could have been struck.
+  - Example: 364–365 for a late Roman nummus of Valentinian I.
+  - Example: 1066–1485 for a broadly dated medieval penny.
+- In cleaning, 0 or negative years are treated as “unknown”.
+
+DENOMINATION
+- Named value/type of the coin when known, e.g. NUMMUS, SESTERTIUS, PENNY, TOKEN.
+- Often linked to size, weight and metal.
+
+DIAMETER
+- Maximum diameter of the coin in millimetres.
+- Useful as a numeric feature; larger denominations are usually physically bigger.
+
+MINT
+- City or mint where the coin was struck when identifiable, e.g. TRIER, ARLES, LYON.
+- Adds geographic context to the issue, but is often missing or uncertain.
+
+COIN_CONDITION
+- Short description of the preservation state, e.g. WORN, CORR (corroded), FRAG (fragmentary).
+- Relevant for taphonomy and sometimes for deciding whether measurements are reliable.
+
+Derived features (created in the notebooks)
+
+mid_date
+- Simple average of COIN_EDATE and COIN_LDATE.
+- Gives a single central year for the coin’s interpreted date range.
+- Used as a numeric feature for plots, clustering, and classification.
+
+date_span
+- COIN_LDATE minus COIN_EDATE.
+- Measures how wide the dating range is.
+  - Small span = precisely dated issue.
+  - Large span = very broad or uncertain dating.
+
+How to “read” a row
+
+Each row represents one coin or related object, with:
+- Provenance: SITECODE + CONTEXT.
+- Context-based dating: PERIOD.
+- Coin-based dating: COIN_REGIME, RULER, COIN_EDATE/COIN_LDATE, mid_date, date_span.
+- Physical/typological info: MATERIAL, COIN_TYPE, DENOMINATION, DIAMETER, MINT, COIN_CONDITION.
+
+In later analysis, you can compare:
+- Context dating (PERIOD) vs coin dating (COIN_REGIME, mid_date).
+- Chronology vs physical size (mid_date vs DIAMETER).
+- Differences between regimes (R vs AS vs E vs N) using these shared fields.
