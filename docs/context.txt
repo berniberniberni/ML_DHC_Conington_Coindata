@@ -1,40 +1,43 @@
 Conington coin data – key fields and terminology
 
 SITECODE
-- Unique code for the excavation area within the A14 project (for example A14-32 or A14-33).
+- Unique code for the excavation area within the A14 project
 - Targeted excavation area (TEA) the coin comes from.
 
 CONTEXT
 - Number of the archaeological context (layer, pit fill, feature) where the coin was found.
-- Used to link coins to stratigraphy and settlement phases.
+- Used to link coins to stratigraphy and settlement phases
 
 PERIOD
-- Broad period of the context in the excavation database (for example 99 may mean “unphased” or “all periods” in this register).
-- This is dating based on stratigraphy/feature, not on the coin itself.
+- Broad period of the context in the excavation database
+- This is dating based on stratigraphy/feature, not on the coin itself
+- 99  = Unphased, undated, or modern disturbance (e.g., subsoil, natural infilling, residuals finds accross periods)
+- 7.1 = Early Anglo-Saxon phase (AD 410–600, Settlement 5 on the gravel ridge in Area 1.)
+- 6.4 = Middle to late Roman (AD 250–410, Settlement 4)
+- 7.2 = Early–middle Anglo-Saxon (AD 410–850, Settlement 5)
+- 7.3 = Middle Anglo-Saxon (AD 700–850, Settlement 5). 
+- 8.0 = Medieval/Post-medieval
 
 MATERIAL
-- Metal of the object, such as COPPER ALLOY, SILVER, or LEAD.
+- Metal composition such as COPPER ALLOY, SILVER, LEAD.
 - Important for distinguishing coins from tokens and for later conservation/interpretation.
 
 COIN_TYPE
-- General object class as identified by the specialist, such as COIN, COPY (imitation), or JETTON (token-like piece).
+- General object coin class such as COIN, COPY (imitation), or JETTON (token-like piece).
 - Helps separate ‘proper’ coins from copies and jettons.
 
 COIN_REGIME
-- High-level historical regime/period of the coin based on numismatic identification.
-- Codes used here:
-  - IA = Iron Age
-  - R  = Roman
-  - AS = Anglo-Saxon
-  - E  = Medieval
-  - N  = Post-medieval
-- This is coin-based dating, independent of the context’s stratigraphic period.
+- High-level historical coin based dating on numismatic identification (indeopendent of stratigraphic context).
+- IA = Iron Age
+- R  = Roman
+- AS = Anglo-Saxon
+- E  = Medieval
+- N  = Post-medieval
 
 RULER
 - Short code for the authority who issued the coin (emperor or monarch), for example:
   - CONSTANTIUS II, VALENTINIAN I (Roman emperors)
   - JAM1 (James I)
-- Narrowly constrains the date range of the coin.
 
 COIN_EDATE / COIN_LDATE
 - ‘Early date’ and ‘late date’ for the coin in calendar years.

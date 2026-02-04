@@ -1,0 +1,11 @@
+Study,Dataset_size,Method_family
+Lockyear seriation,540,Classical
+Ünlü Anatolian,100,Classical  
+dos Reis XRF,150,Classical
+Gupta archer-type,507,Classical
+Cooper multimodal,565,Classical
+Özmen B-CNN,500,CNN
+Manzoor AlexNet,17546,CNN
+Anwar CoinNet,18000,CNN
+EURO-Coin,60000,CNN
+Guo Siamese ViT,20000,Transformer
